@@ -1,4 +1,23 @@
-allAccounts = ["1212", "1215", "99123"]
+#allAccounts = {"1212":120, "1215":500, "99123":3 }
+allAccounts = {}
+
+kontonummer = input("Ange ditt kontonummer:")
+belopp = int(input("Ange belopp att sätta in:"))
+if kontonummer in allAccounts:
+    allAccounts[kontonummer] = allAccounts[kontonummer] + belopp
+else:
+    print("Ogiltigt kontonummer")
+
+for kontonummer in allAccounts.keys():
+    print(f"{kontonummer} - saldo: {allAccounts[kontonummer]}")
+
+for saldo in allAccounts.values():
+    print(f"saldo: {saldo}")
+
+# for key,value in allAccounts.items():
+#     print( key, value )
+
+
 while True:
     print("1. Lista alla konton")
     print("2. Skriv ut hur många konton")
