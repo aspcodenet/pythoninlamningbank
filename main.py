@@ -1,6 +1,9 @@
 #allAccounts = {"1212":120, "1215":500, "99123":3 }
 allAccounts = {}
 
+
+
+
 kontonummer = input("Ange ditt kontonummer:")
 belopp = int(input("Ange belopp att sätta in:"))
 if kontonummer in allAccounts:
